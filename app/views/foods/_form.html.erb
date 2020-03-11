@@ -1,0 +1,22 @@
+<%= form_with(model: food, local: true) do |f| %>
+
+
+<fieldset>
+<legend> Insert Data </legend>
+    <br>
+    
+    <%= f.label :nama, "Nama Makanan : " %>
+    <br>
+    <%= f.text_field  :nama %>
+    <br> <br>
+
+    <%= f.label :harga, "Harga : " %>
+    <br>
+    <%= f.number_field  :harga %>
+    <br><br>
+
+
+    <%= f.submit "Save" %>
+</fieldset>
+
+<% end %>
